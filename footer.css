@@ -1,0 +1,58 @@
+footer .footer1 {
+    width: 100%;
+    background: #524950;
+    color: #F2D9D0;
+    line-height: 2em;
+    margin-top: 80vh;
+    padding: 3em 0 1em;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.footer2 {
+    width: 100%;
+    background: #484046;
+    color: #F2D9D0;
+    line-height: 2em;
+    padding: 3em 0 1em;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+footer h1, footer p {
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+footer h1 {
+    padding-bottom: 1.5em;
+}
+
+footer a, footer button {
+    color: rgb(255, 184, 53);
+}
+
+footer button {
+    background: inherit;
+    border: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+/* Écran trop peu large pour une marge du footer */
+@media screen and (max-width: 730px) {
+    footer {
+        padding: 3em 1em 1em;
+    }
+    
+    footer h1 {
+        margin: 0;
+        transform: none;
+        text-align: center;
+    }
+
+    footer p {
+        margin-left: 0;
+        transform: none;
+    }
+}

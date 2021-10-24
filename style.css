@@ -1,25 +1,31 @@
 * {
     margin: 0;
     padding: 0;
-  }
+    color: white;
+}
   
-  body {
-      background: #999;
-  }
-  
-  .generator { 
+body {
+    background: #242425;
+}
+
+.generator {
     position: absolute;
     top: 50%;
     left: 50%;
     min-width: max-content;
     transform: translateX(-50%) translateY(-50%);
-  }
-  
-  .field {
+    min-height: 80%;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.field {
     margin: 4em 0 2.5em;
-  }
-  
-  .password {
+}
+
+.password {
     letter-spacing: 0.2em;
     font-family: monospace;
     font-size: 2em;
@@ -32,75 +38,111 @@
     cursor: pointer;
     outline: none;
     margin: 0;
-  }
-  
-  .password::selection {
+}
+
+.password::selection {
     background-color: #8ff;
     color: purple;
-  }
-  
-  .field .fieldtext {
+}
+
+.field .fieldtext {
     display: none;
     position: absolute;
     right: 0;
     margin-top: -1.5em;
     color: #eee;
     font-size: 1.2em;
-  }
-  
-  .field:hover .fieldtext {
+}
+
+.field:hover .fieldtext {
     display: unset;
-  }
-  
-  .generation {
+}
+
+.generation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  
-  .generation .length {
+}
+
+.generation .length {
     width: 77%;
-  }
-  
-  .generation .length input#length {
+}
+
+.generation .length input#length {
     width: 75%;
     cursor: ew-resize;
-  }
-  
-  .generation .length .output {
+}
+
+.generation .length .output {
     display: inline-block;
     font-size: 1.3em;
     width: 1em;
     margin-right: 0.4em;
-  }
-  
-  .generation .refresh {
+}
+
+.generation .refresh {
     height: 1.5em;
     width: 1.5em;
     font-size: 2em;
     cursor: pointer;
-  }
-  
-  .characters {
+    color: black;
+}
+
+.characters {
     font-size: 1.2em;
-  }
-  
-  .characters label {
+}
+
+.characters label {
     margin-right: 1em;
-  }
-  
-  .characters input {
+}
+
+.characters input {
     margin-right: 0.7em;
-  }
-  
-  .copied {
+}
+
+.copied {
     display: none;
     position: absolute;
-    bottom: 1em;
+    bottom: 10em;
     width: 100%;
     font-size: 2em;
-    color: #8ff;
     font-family: Arial;
     text-align: center;
     margin: 0 auto;
-  }
+}
+
+.copied p {
+    color: #88ffff;
+}
+
+ /* Écran moins large, diminution de la police */
+ @media (max-width: 800px) {
+    body {
+        font-size: 0.8em;
+    }
+}
+
+ /* Écran moins large, diminution de la largeur */
+ @media (max-width: 700px) {
+    .password {
+        letter-spacing: 0px;
+        max-width: max-content;
+    }
+}
+
+ /* Écran moins large, diminution de la police */
+ @media (max-width: 500px) {
+    .password {
+        font-size: 1.5em;
+    }
+
+    .generation {
+        width: 75%;
+    }
+
+    .characters label {
+        display: block;
+        margin: 1.5em 0;
+    }
+}
+
