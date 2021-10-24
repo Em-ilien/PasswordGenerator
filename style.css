@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+      background: #999;
+  }
+  
+  .generator { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: max-content;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .field {
+    margin: 4em 0 2.5em;
+  }
+  
+  .password {
+    letter-spacing: 0.2em;
+    font-family: monospace;
+    font-size: 2em;
+    border: 2px dashed #bbb;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 0.5em;
+    min-width: max-content;
+    width: 27em;
+    cursor: pointer;
+    outline: none;
+    margin: 0;
+  }
+  
+  .password::selection {
+    background-color: #8ff;
+    color: purple;
+  }
+  
+  .field .fieldtext {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-top: -1.5em;
+    color: #eee;
+    font-size: 1.2em;
+  }
+  
+  .field:hover .fieldtext {
+    display: unset;
+  }
+  
+  .generation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .generation .length {
+    width: 77%;
+  }
+  
+  .generation .length input#length {
+    width: 75%;
+    cursor: ew-resize;
+  }
+  
+  .generation .length .output {
+    display: inline-block;
+    font-size: 1.3em;
+    width: 1em;
+    margin-right: 0.4em;
+  }
+  
+  .generation .refresh {
+    height: 1.5em;
+    width: 1.5em;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  .characters {
+    font-size: 1.2em;
+  }
+  
+  .characters label {
+    margin-right: 1em;
+  }
+  
+  .characters input {
+    margin-right: 0.7em;
+  }
+  
+  .copied {
+    display: none;
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    font-size: 2em;
+    color: #8ff;
+    font-family: Arial;
+    text-align: center;
+    margin: 0 auto;
+  }
