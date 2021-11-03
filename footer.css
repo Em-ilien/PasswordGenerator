@@ -41,8 +41,27 @@ footer button {
 
 /* Écran trop peu large pour une marge du footer */
 @media screen and (max-width: 730px) {
-    footer {
-        padding: 3em 1em 1em;
+    footer p{
+        padding: 0 3em;
+    }
+    
+    footer h1 {
+        margin: 0;
+        transform: none;
+        text-align: center;
+    }
+
+    footer p {
+        margin-left: 0;
+        transform: none;
+    }
+}
+
+
+/* Éncore moins */
+@media screen and (max-width: 600px) {
+    footer p{
+        padding: 0 1.5em;
     }
     
     footer h1 {
