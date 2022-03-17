@@ -218,6 +218,10 @@ input[type="range"]::-moz-range-progress {
     border: none;
 }
 
+.generation .refresh p {
+    height: 100%;
+}
+
 .characters {
     font-size: 1.2em;
 }

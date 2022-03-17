@@ -1,5 +1,5 @@
 let password = document.querySelector(".password");
-let refresh = document.querySelector(".refresh");
+let refresh = document.querySelector(".refresh p");
 let lengthInput = document.querySelector(".generation input#length");
 let lengthOutput = document.querySelector(".generation .output");
 let copiedNotif = document.querySelector(".copied");
