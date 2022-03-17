@@ -1,5 +1,5 @@
 let password = document.querySelector(".password");
-let refresh = document.querySelector(".refresh p");
+let refresh = document.querySelector(".refresh img");
 let lengthInput = document.querySelector(".generation input#length");
 let lengthOutput = document.querySelector(".generation .output");
 let fieldtextNotif = document.querySelector(".field .fieldtext.notif");
