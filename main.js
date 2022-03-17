@@ -2,7 +2,8 @@ let password = document.querySelector(".password");
 let refresh = document.querySelector(".refresh p");
 let lengthInput = document.querySelector(".generation input#length");
 let lengthOutput = document.querySelector(".generation .output");
-let copiedNotif = document.querySelector(".copied");
+let fieldtextNotif = document.querySelector(".field .fieldtext.notif");
+let fieldtextInfo = document.querySelector(".field .fieldtext.info");
 
 let inputs = document.querySelectorAll(".characters input");
 let lower = document.querySelector(".lower");
@@ -30,9 +31,11 @@ password.addEventListener("click", () => {
     selection.addRange(range);
     document.execCommand("copy");
     
-    copiedNotif.style.display = "unset";
+    fieldtextNotif.style.display = "unset";
+    fieldtextInfo.style.display = "none";
     setTimeout(() => {
-        copiedNotif.style.display = "none";
+        fieldtextNotif.style.display = "none";
+        fieldtextInfo.style.display = "unset";
     }, 1.5 * 1000);
 });
 

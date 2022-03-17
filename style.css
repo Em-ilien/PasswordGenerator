@@ -254,22 +254,6 @@ input[type="range"]::-moz-range-progress {
     background: #FFB835;
 }
 
-
-.copied {
-    display: none;
-    position: absolute;
-    bottom: 10em;
-    width: 100%;
-    font-size: 2em;
-    font-family: Arial;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.copied p {
-    color: #88ffff;
-}
-
  /* Écran moins large, diminution de la police */
  @media (max-width: 800px) {
     body {
