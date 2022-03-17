@@ -180,10 +180,16 @@ input[type="range"]::-moz-range-progress {
     margin-top: -1.5em;
     color: #eee;
     font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.field:hover .fieldtext {
+.field:hover .fieldtext.info.show {
     display: unset;
+}
+
+.field .fieldtext.notif {
+  margin-top: -4.5em;
+  color: #88ffff;
 }
 
 .generation {

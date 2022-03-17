@@ -32,10 +32,10 @@ password.addEventListener("click", () => {
     document.execCommand("copy");
     
     fieldtextNotif.style.display = "unset";
-    fieldtextInfo.style.display = "none";
+    fieldtextInfo.classList.remove("show");
     setTimeout(() => {
         fieldtextNotif.style.display = "none";
-        fieldtextInfo.style.display = "unset";
+        fieldtextInfo.classList.add("show");
     }, 1.5 * 1000);
 });
 
