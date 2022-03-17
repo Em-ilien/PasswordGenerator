@@ -223,9 +223,10 @@ input[type="range"]::-moz-range-progress {
     border: none;
   }
   
-  .generation .refresh p {
+  .generation .refresh img {
+    width: 100%;
     height: 100%;
-    color: #333335;
+    margin: auto;
 }
 
 .characters {
